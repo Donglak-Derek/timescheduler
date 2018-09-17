@@ -1,4 +1,4 @@
-#Overtime App
+# Overtime App
 
 ## Key requierment: company needs a documentation that salaried employees did or did not get overtime each week
 
