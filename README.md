@@ -4,8 +4,8 @@
 
 ## Models
 - Post -> date:date, rationale:text
-- User -> Divise
-- AdminUser -> STI
+-- User -> Divise
+- AdminUser -> STI(single table inheritence)
 
 ## Features:
 - Approval Workflow
