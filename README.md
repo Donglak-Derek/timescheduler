@@ -18,4 +18,5 @@
 - Bootstrap -> formatting
 
 ## Refactor TODOS:
+- Make Full name
 - Refactor user association integration test in post_spec
