@@ -6,7 +6,7 @@ RSpec.describe Post, type: :model do
       @post = Post.create(date: Date.today, rationale: "Anything", user: User.create(email: "test@test.com", first_name: "Derek", last_name: "Han", password: "asdfasdf", password_confirmation: "asdfasdf"))
     end
 
-    it 'can be created' do 
+    it 'can be created' do
     puts @post 
       expect(@post).to be_valid
     end
