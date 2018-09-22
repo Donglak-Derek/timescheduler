@@ -7,7 +7,7 @@ RSpec.describe Post, type: :model do
     end
 
     it 'can be created' do
-    puts @post 
+    # puts @post 
       expect(@post).to be_valid
     end
 
