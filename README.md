@@ -14,6 +14,7 @@
 
 ## Features:
 - Approval Workflow (once approve post cannot be deleted)
+- Growl-like notifications with gem gritter
 - SMS Sending -> link to approval or overtime input
 - Administrate admin dashboard
 - Email summary to managers for approval
