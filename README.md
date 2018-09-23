@@ -16,6 +16,7 @@
 - Approval Workflow (once approve post cannot be deleted)
 - Growl-like notifications with gem gritter
 - Delete sign up function from Devise (Admin registers users)
+- Block non admin and quest users
 - SMS Sending -> link to approval or overtime input
 - Administrate admin dashboard
 - Email summary to managers for approval
