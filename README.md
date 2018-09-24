@@ -17,6 +17,7 @@
 - Growl-like notifications with gem gritter
 - Delete sign up function from Devise (Admin registers users)
 - Block non admin and quest users
+- search function in admin dashboard 
 - SMS Sending -> link to approval or overtime input
 - Administrate admin dashboard
 - Email summary to managers for approval
