@@ -13,11 +13,11 @@
 - AdminUser -> STI(single table inheritence from user)
 
 ## Features:
-- Approval Workflow (once approve post cannot be deleted)
 - Growl-like notifications with gem gritter
 - Delete sign up function from Devise (Admin registers users)
 - Block non admin and quest users
 - search function in admin dashboard 
+- Approval Workflow (once approve post cannot be deleted)
 - SMS Sending -> link to approval or overtime input
 - Administrate admin dashboard
 - Email summary to managers for approval
@@ -30,8 +30,8 @@
 - test email : test@test.com
 - password : asdfasdf
 
-- admin email :
-- admin password : 
+- admin email : admin@test.com
+- admin password : asdfasdf
 
 ## Refactor TODOS:
 - Make Full name method
