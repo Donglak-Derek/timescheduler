@@ -10,5 +10,11 @@ FactoryBot.define do
 		rationale { "Some more content" }
 		user
 	end
+
+	factory :post_from_other_user, class: Post do
+		date { Date.yesterday }
+		rationale { "Some more content" }
+		association :user, factory: :user, strategy: :build_stubbed
+	end
 end
 

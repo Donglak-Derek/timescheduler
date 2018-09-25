@@ -19,6 +19,7 @@
 - search function in admin dashboard 
 - Approval Workflow (once approve post cannot be deleted)
 - Using pundit to redirect page for permission structure **
+- Using scope: user only can see their post
 - SMS Sending -> link to approval or overtime input
 - Administrate admin dashboard
 - Email summary to managers for approval
