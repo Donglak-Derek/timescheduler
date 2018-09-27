@@ -8,7 +8,7 @@
 - Rails 5.2.1
 
 ## Models
-- Post -> date:date, rationale:text, user_id: user.id
+- Post -> date:date, rationale:text, overtime_request:decimal, user_id:user.id
 - User -> Devise
 - AdminUser -> STI(single table inheritence from user)
 
