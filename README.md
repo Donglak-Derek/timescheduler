@@ -11,6 +11,7 @@
 - Post -> date:date, rationale:text, overtime_request:decimal, user_id:user.id
 - User -> Devise
 - AdminUser -> STI(single table inheritence from user)
+- AuditLog -> user:references, status:integer, start_date:date, end_date:date
 
 ## Features:
 - Growl-like notifications with gem gritter
@@ -20,7 +21,8 @@
 - Approval Workflow (once approve post cannot be deleted)
 - Using pundit to redirect page for permission structure **
 - Using scope: user only can see their post
-- SMS Sending(finish setting but need to pay to use it) -> link to approval or overtime input 
+- SMS Sending(finish setting but need to pay to use it) -> link to approval or overtime input
+- Audit logs 
 - Administrate admin dashboard
 - Email summary to managers for approval
 - Needs to be documented if employee did not log overtime

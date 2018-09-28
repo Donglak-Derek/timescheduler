@@ -13,3 +13,5 @@ module SmsTool
 	end
 end
 
+# to the rails console
+# FakeSms.send_sms(number: '9176478335', message: "Look at me! I am in a text!")
