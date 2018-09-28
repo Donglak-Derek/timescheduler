@@ -50,3 +50,5 @@ gem 'bourbon', '~> 5.0.0.beta.5'
 gem 'pundit', '~> 2.0'
 gem 'twilio-ruby', '~> 5.13'
 gem 'dotenv-rails', groups: [:development, :test]
+
+gem 'rubocop-rails_config', '~> 0.2.4'
