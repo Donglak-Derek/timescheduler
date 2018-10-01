@@ -23,6 +23,7 @@
 - Using scope: user only can see their post
 - SMS Sending(finish setting but need to pay to use it) -> link to approval or overtime input
 - Audit logs 
+- kaminari for paginations
 - Administrate admin dashboard
 - Email summary to managers for approval
 - Needs to be documented if employee did not log overtime
