@@ -37,6 +37,21 @@
 - admin email : admin@test.com
 - admin password : asdfasdf
 
-## Refactor TODOS:
-- Make Full name method
-- Refactor user association integration test in post_spec
+## Goal of audit log:
+- Keep track of if a employee had overtime or not
+
+- Dependencies:
+	- User
+
+- Attrs:
+	- Status: integer (enum) -> pending, complete
+	- start_date -> dafault previous Monday
+
+monday
+|
+|
+|
+sunday ---- notification
+
+rails g resource AuditLog user:references status:integer start_date:date end_date:date
+AuditLog.create!(user_id: User.last.id, status: 0, start_date: (Date.today - 6.days))
