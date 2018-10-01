@@ -20,8 +20,14 @@ describe 'AuditLog Feature' do
 			expect(page).to have_content(/DEREK, HAN/)
 		end
 
-		xit 'cannot be accessed by non admin user' do
+		it 'cannot be accessed by non admin user' do
+			logout(:user)
+			user = FactoryBot.create(:user)
+			login_as(user, :scope => :user)
 
+			visit audit_logs_path
+
+			expect(current_path).to eq(root_path)
 		end
 	end
 end
