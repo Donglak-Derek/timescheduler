@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   concern :paginatable do
     get '(page/:page)', action: :index, on: :collection, as: ''
   end
-  resources :audit_logs, :posts, except: [:new, :edit, :destroy], concerns: :paginatable
+  # delete :new from the resources because cannot access new_post_path
+  resources :audit_logs, :posts, concerns: :paginatable, except: [:edit, :destroy]
   namespace :admin do
       resources :posts
       resources :users
