@@ -21,12 +21,15 @@
 - Approval Workflow (once approve post cannot be deleted)
 - Using pundit to redirect page for permission structure **
 - Using scope: user only can see their post
-- SMS Sending(finish setting but need to pay to use it) -> link to approval or overtime input
 - Audit logs 
 - kaminari for paginations
 - Administrate admin dashboard
-- Email summary to managers for approval
 - Needs to be documented if employee did not log overtime
+
+## after deploy
+- SMS Sending( twilio need to pay ) -> link to approval or overtime input
+- Email summary to managers for approval -> sparkpost.com after deploy
+- Create audit log for each text message weekly
 
 ## UI:
 - Bootstrap -> formatting
