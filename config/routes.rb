@@ -3,7 +3,12 @@ Rails.application.routes.draw do
     get '(page/:page)', action: :index, on: :collection, as: ''
   end
   # delete :new from the resources because cannot access new_post_path
-  resources :audit_logs, :posts, concerns: :paginatable, except: [:edit, :destroy]
+  resources :audit_logs, :posts, concerns: :paginatable, except: [:edit, :destroy] do
+    member do
+      get :confirm
+    end
+  end
+  
   namespace :admin do
       resources :posts
       resources :users
