@@ -18,6 +18,11 @@ puts "1 admin user created!"
 					)
 puts "1 user created!"
 
+AuditLog.create!( user_id: @user.id, status: 0, start_date: (Date.today - 6.days))
+AuditLog.create!( user_id: @user.id, status: 0, start_date: (Date.today - 13.days))
+AuditLog.create!( user_id: @user.id, status: 0, start_date: (Date.today - 20.days))
+puts "3 audit logs have been created!"
+
 54.times do |post|
 	Post.create!(
 					date: Date.today, 
@@ -28,10 +33,6 @@ puts "1 user created!"
 end
 puts "54 Posts have been created"
 
-AuditLog.create!( user_id: @user.id, status: 0, start_date: (Date.today - 6.days))
-AuditLog.create!( user_id: @user.id, status: 0, start_date: (Date.today - 13.days))
-AuditLog.create!( user_id: @user.id, status: 0, start_date: (Date.today - 20.days))
-puts "3 audit logs have been created!"
 
 
 
